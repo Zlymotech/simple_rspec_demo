@@ -1,24 +1,24 @@
-# README
+Setup
+Clone the Repository:
+git clone [repository-url]
+cd [repository-directory]
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Install Dependencies:
+Run the following command to install the necessary gems:
 
-Things you may want to cover:
+bundle install
 
-* Ruby version
 
-* System dependencies
+Running the Tests
+Update Configuration:
 
-* Configuration
+Open spec/requests/api_spec.rb.
+Replace https://dummy.restapiexample.com/api/v1/employees with the actual API base URL.
+Modify the endpoint /employee and authentication details ('username' and 'password') as needed.
+Run RSpec Tests:
+Execute the tests using:
 
-* Database creation
+bundle exec rspec
+This command will run the tests and verify that the API requests return the expected status codes.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Replace [repository-url] and [repository-directory] with the actual values for your repository.
